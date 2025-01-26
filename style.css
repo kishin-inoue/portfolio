@@ -1,0 +1,100 @@
+h1{
+  font-family: "lucida blackletter", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: regular;
+  font-weight: 700;
+  font-size: 70px;
+  transform: skew(40deg);
+  position: relative;
+  top: -40px
+}  
+  
+h2{
+  font-family: "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: regular;
+  font-weight: 400;
+  font-size: 30px;
+  transform: translateY(-72px);
+
+}
+
+#contact{
+  font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+#tocenter{
+  text-align: center;
+  justify-content: center;
+
+} 
+
+
+/* Container for the images */
+            .image-container {
+              position: relative;
+              width: 150px;
+              height: 600px;
+              perspective: 1000px;
+              cursor: pointer;
+            }
+          
+            /* Default styling for images */
+            .image-container img {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              transition: transform 0.5s ease, opacity 0.5s ease;
+              backface-visibility: hidden;
+              cursor: pointer;
+            }
+          
+            /* Front image */
+            .front {
+              transform: rotateY(0deg);
+              opacity: 1;
+              cursor: pointer;
+            }
+          
+            /* Back image starts hidden */
+            .back {
+              transform: rotateY(90deg);
+              opacity: 0;
+              cursor: pointer;
+            }
+          
+            /* Hover effect to show the back image */
+            .image-container:hover .front {
+              transform: rotateY(90deg);
+              opacity: 0;
+              cursor: pointer;
+            }
+          
+            .image-container:hover .back {
+              transform: rotateY(0deg);
+              opacity: 1;
+              cursor: pointer;
+            }
+
+            .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Optional: space between images */
+              cursor: pointer;
+              transform: translateY(-85px);
+            
+            }
+
+.contactinfo{
+    text-align: center;
+    font-size: small;
+    display: hidden;
+}
+
+#contact:hover .contactinfo{
+    display: block
+
+}

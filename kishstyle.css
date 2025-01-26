@@ -1,0 +1,593 @@
+#title{
+        font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 26px;
+}
+
+#kishlogo{
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+#kishlogo2{
+    position: fixed;
+    transform: translate(0,-70px);
+    margin-top: 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+/*
+
+    <div class="kishlogo2">
+            <a href="main page.html" cursor="pointer">
+                <img src="images1/kishininoue.fr_logo.png" height="100px">
+            </a>
+    
+        </div>
+        
+.kishlogo2{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    bottom: 4px;
+    margin-inline: auto; 
+    width: fit-content;
+    cursor: pointer;
+}
+*/
+
+.pictureofme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#hello{
+    font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 1000px;
+    top: -400px;
+}
+
+#texttext{
+    display: flex;
+    width: 700px;
+    margin-left: 60px;
+
+}
+@font-face {
+    font-family: 'bianzhidai-Base';
+    src: url('bianzhidai-Base.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'lucida blackletter';
+    src: url('Lucida\ Blackletter\ Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('EBGaramond.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'EBGaramond-italic';
+    src: url('EBGaramond-Italic.ttf') format('opentype');
+    font-weight: normal;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'DMMono-Light';
+    src: url('DMMono-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'DMMono-LightItalic';
+    src: url('DMMono-LightItalic.ttf') format('opentype');
+    font-weight: normal;
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'FauneThin';
+    src: url('Faune-DisplayThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Faune';
+    src: url('Faune-TextRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+#contacttt{
+    text-align: right;
+    margin-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.appear{
+    transform: translate(80px, -510px);
+    font-family: 'lucida blackletter', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(227, 18, 18);
+    display: none
+}
+
+#list:hover .appear{
+    display: block;
+    
+}
+
+
+/* @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+  }
+  
+  .wiggle {
+    display: inline-block;
+    cursor: pointer;
+    animation: wiggle 0.02s ease-in-out;
+    animation-delay: 2.5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    wiggle {
+   /* color: rgb(40, 40, 202);
+   cursor : pointer;
+  }
+*/
+
+
+
+#titling{
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 1;
+
+}
+
+#blocblanc{
+    height: 10px;
+    width: 3%;
+    display: hidden;
+}
+
+
+/* 
+    font-family: "lucida blackletter", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+
+    border: 8px solid black;
+
+    .container img {
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(0.9); 
+}
+
+*/
+
+#image-gallery{
+    
+    max-height: 570px; 
+    height: 570px;
+    display: flex;
+    justify-items: flex-start;
+    flex-shrink: 1;
+    width: min(900px, 90%);
+
+    
+}
+
+#image-gallery img {
+    transition: transform 0.1s ease;
+}
+
+#image-gallery img:hover {
+    transform: scale(1.03); 
+
+}
+
+
+    #nail1{
+        position:absolute;
+
+        left: 1px;
+
+    }
+
+    #nail2{
+        position:absolute;
+        
+        left: 117px;
+
+    }
+
+    #nail3{
+        position:absolute;
+
+        left: 230px;
+    }
+
+    #nail4{
+        position:absolute;
+        top: 127px;
+        left: 375px;
+    }
+
+    #nail5{
+        position:absolute;
+        top: 399px;
+        left: 360px;
+    }
+
+    #nail6{
+        position:absolute;
+        top: 120px;
+        left: 505px;
+    }
+
+    #nail7{
+        position:absolute;
+        top: 105px;
+        left: 635px;
+    }
+
+    #nail8{
+        position:absolute;
+        top: 120px;
+        left: 775px;
+    }
+
+    #nail9{
+        position:absolute;
+        top: 360px;
+        left: 775px;
+    }
+
+
+    #list{
+        position: absolute;
+        top: 275px;
+        left: 1010px;
+    }
+    
+    
+    .category{
+        font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 200px;
+        transform: translate(60px, -240px) skew(42deg); 
+        position: sticky;
+        top: 200px;
+        /*background-color: white;
+        background-size: bottom left/ 1000px, 50px no-repeat;*/
+        
+    }
+
+    #explication{
+        font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        transform: translate(220px, -460px);
+        position: sticky;
+        top: 0px;
+    }
+
+
+    
+
+ /*   #fonts{
+        display: flex;
+        opacity: flex;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        backface-visibility: hidden;
+    
+    }
+
+    #nail7:hover #fonts {
+        opacity: 1;
+    
+    }
+*/
+
+.videos{
+    background-image: linear-gradient(to bottom, rgba(221, 221, 221, 0), 20%, rgb(237, 237, 237));
+    background-size: contain;
+    transform: translate(0px, -400px);
+    width: auto;
+    height: 1200px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube{
+    width: 500px;
+    height: 300px;
+
+}
+
+.barredevideo{
+    transform: translate(0px, -7px)
+
+}
+
+
+    .image-gallery {
+        display: flex;
+      }
+      
+      .image-gallery img {
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      
+      .image-gallery img:hover {
+        transform: scale(1.1);
+      }
+      
+      .content {
+        margin-top: 20px;
+      }
+      
+      .content-section {
+        display: none; /* Hide all sections initially */
+      }
+
+
+      .content-section.active  {
+        display: block; 
+      }
+
+
+.theposters {
+    /*background-color: #fff;
+    background-color: rgba(255,255,255,0.5);*/
+    background-image: linear-gradient(to bottom, rgba(221, 221, 221, 0), 10%, rgb(237, 237, 237));
+    background-size: contain;
+    background-size: auto 130%;
+    transform: translate(0px, -400px);
+    width: auto;
+    display: flex; 
+    justify-content: space-evenly;
+    row-gap: 100px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.endbox{
+    width: 100%;
+    height: 150px;
+}
+
+
+.legende{
+    position: relative;
+    top: -10px;
+    font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+}
+
+.explanation{
+    width: 410px;
+    height: auto;
+
+    position: relative;
+    top: -16px;
+    font-family: sans-serif;
+        font-size: 11px;
+}
+
+
+#aboutme{
+    display: flex; /*border: 8px solid black;*/
+    margin: 20px;
+    display: block;
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#abouttt{
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    text-align: justify;
+    font-size: 65px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+#moi{
+    position:absolute;
+        top: 799px;
+        left: 890px;
+    opacity: 75%;
+}
+
+.download{
+    justify-self: center;
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+
+
+#cyclingImage{
+    cursor: pointer;
+
+}
+
+
+.gobacktotop{
+    justify-self: center;
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    color: rgb(224, 77, 9);
+    background-color: white;
+    border: 1px solid rgb(224, 99, 9);
+    padding-bottom: 20px;
+    opacity: 50%;
+    position: absolute;
+    position: center;
+}
+
+
+@font-face {
+    font-family: 'kkkatalog';
+    src: url('kkkatalog-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Dinopartouze - Mono';
+    src: url('Dinopartouze-mono.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Dinopartouze - Overlay';
+    src: url('Dinopartouze-overlay.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Les Agaves - Regular';
+    src: url('LesAgaves-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+#categoryexception{
+    font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200px;
+    transform: translate(60px, -240px) skew(42deg); 
+    top: 200px;
+}
+
+.fooonts {
+    background-size: contain;
+    background-size: auto 130%;
+    transform: translate(0px, -420px);
+    width: auto;
+    background: white;
+    /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), 5%, rgb(255, 255, 255, 100));
+
+    display: flex; 
+    justify-content: space-evenly;
+    row-gap: 100px;
+    column-gap: 30px;
+    flex-wrap: wrap;*/
+    
+}
+
+.input-container {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 40px;
+    width: flex;
+
+}
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.font-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: left;
+    padding: 20px;
+}
+.font-card {
+    border: 2px solid #e4e4e4;
+    padding: 15px;
+    width: 100%;
+    background-color: rgb(255,255,255, 0.9);
+    word-wrap: break-word;
+}
+.font-name {
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+    font-family:  sans-serif;
+}
+.sample-text {
+    font-size: 160px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+#textAgaves{
+    font-size: 110px;
+}
+
+
+.downloadfont{
+    justify-self: right;
+    align-self: top;
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    border: 1px solid rgb(127, 127, 127);
+    padding: 8px;
+    margin-top: 0;
+}
+
+#textDinopartouzeoverlay{
+    color: rgb(157, 157, 157);
+}
+
+#textDinopartouzeoverlay2{
+    color: rgb(157, 157, 157);
+}
+
+#textDinopartouzes{
+    color: black;
+}
+
+#sheenabox {
+    display: grid;
+    place-items: left; 
+
+    position: relative;
+  }
+
+#textDinopartouzeoverlay2, #textDinopartouzes{
+    grid-area: 1 / 1;
+}
+
+/*.font-name{
+    font-family: "lucida blackletter", "astloch", 'Arial Narrow', Arial, sans-serif;
+
+}
+
