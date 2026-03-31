@@ -1,100 +1,178 @@
-h1{
-  font-family: "lucida blackletter", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: regular;
-  font-weight: 700;
-  font-size: 70px;
-  transform: skew(40deg);
-  position: relative;
-  top: -40px
-}  
-  
-h2{
-  font-family: "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: regular;
-  font-weight: 400;
-  font-size: 30px;
-  transform: translateY(-72px);
+@media print {
 
+    @page {
+        size: 14cm 27cm;
+        margin-top: 15mm;
+        margin-bottom: 25mm;
+
+        bleed: 5mm;
+        marks: crop cross;
+
+        @bottom-center {
+            content: counter(page);
+            font-family: "Barlow-TypoDesBois", Arial, sans-serif;
+            font-size: 12px;
+        }
+    }
+
+    @page:right {
+        @top-right {
+          content: "projet de diplôme, kishin inoue 2026";
+          font-family: "Barlow-TypoDesBois", Arial, sans-serif;
+          font-size: 7px;
+          text-align: right;
+          margin-top: 3mm;
+          padding-left: 35mm;
+        }
+    } 
+
+    @page:left {
+        @top-left {
+          content: "projet de diplôme, kishin inoue 2026";
+          font-family: "Barlow-TypoDesBois", Arial, sans-serif;
+          font-size: 8px;
+          text-align: left;
+          margin-top: 3mm;
+          padding-right: 15mm;
+        }
+    } 
+
+    .header, .footer{
+        display: none;
+    }
+    #tomjoubert{
+        display: none;
+    }
+    #title{
+        margin-right: 15mm;
+        margin-left: 14mm;
+    }
+    #text{
+        margin-right: 47mm;
+        margin-left: 14mm;
+    }
+    
 }
 
-#contact{
-  font-family: "lucida blackletter", "astloch", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
 
-  cursor: pointer;
+
+model-viewer::part(default-progress-bar) {
+    display: none;
 }
 
-#tocenter{
-  text-align: center;
-  justify-content: center;
-
-} 
-
-
-/* Container for the images */
-            .image-container {
-              position: relative;
-              width: 150px;
-              height: 600px;
-              perspective: 1000px;
-              cursor: pointer;
-            }
-          
-            /* Default styling for images */
-            .image-container img {
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              transition: transform 0.5s ease, opacity 0.5s ease;
-              backface-visibility: hidden;
-              cursor: pointer;
-            }
-          
-            /* Front image */
-            .front {
-              transform: rotateY(0deg);
-              opacity: 1;
-              cursor: pointer;
-            }
-          
-            /* Back image starts hidden */
-            .back {
-              transform: rotateY(90deg);
-              opacity: 0;
-              cursor: pointer;
-            }
-          
-            /* Hover effect to show the back image */
-            .image-container:hover .front {
-              transform: rotateY(90deg);
-              opacity: 0;
-              cursor: pointer;
-            }
-          
-            .image-container:hover .back {
-              transform: rotateY(0deg);
-              opacity: 1;
-              cursor: pointer;
-            }
-
-            .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Optional: space between images */
-              cursor: pointer;
-              transform: translateY(-85px);
-            
-            }
-
-.contactinfo{
-    text-align: center;
-    font-size: small;
-    display: hidden;
+@font-face {
+    font-family: 'Barlow-TypoDesBois';
+    src: url('Barlow-TypoDesBois.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
 }
 
-#contact:hover .contactinfo{
-    display: block
+.barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
 
+#tomjoubert{
+    background-color: white;
+    font-family: "Barlow-TypoDesBois", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    /*box-shadow: 1px 1px 1px grey;*/
+    border-width: 1.4px;
+    border-color: black;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.tomjoubert:hover {
+    color: rgb(84, 126, 61);
+}
+
+.tomjoubert:active {
+    color: rgb(214, 214, 214);
+}
+
+.title {
+    font-family: "Barlow-TypoDesBois", Arial, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    transform: skew(13deg); 
+    margin-top: 0.3cm;
+    margin-left: 0.7cm;
+    z-index: 2;
+}
+
+.text {
+    font-family: "barlow-thin", Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    margin-left: 0.7cm;
+    margin-right: 3.5cm;
+    margin-top: 2cm;
+    margin-bottom: 7cm;
+    z-index: 2;
+}
+
+#plant {
+    height: 70px
+}
+
+.plant3D1 {
+    position: absolute;
+    z-index: 99;
+    background-size: contain;
+}
+
+.plantRandomPlus  {
+    position: absolute;
+    z-index: 100;
+    background-size: contain;
+    transform: scale3d(2,2,2);
+}
+
+.plantRandomPlus2  {
+    position: absolute;
+    z-index: 100;
+    background-size: contain;
+    transform: scale3d(0.5,0.5,0.5);
+}
+
+.plantRandomPlus3  {
+    position: absolute;
+    z-index: 100;
+    background-size: contain;
+    transform: scale3d(3,3,3);
+}
+
+#plant3D1{
+    transform: scale3d(1,1,1);
+}
+#plant3D2{
+    transform: scale3d(2,2,2);
+}
+#plant3D3{
+    transform: scale3d(3,3,3);
+}
+#plant3D4{
+    transform: scale3d(3,3,3);
+}
+#plant3D5{
+    transform: scale3d(2,2,2);
+}
+#plant3D6{
+    transform: scale3d(1.5,1.5,1.5);
+}
+#plant3D7{
+    transform: scale3d(3,3,3);
+}
+#plant3D8{
+    transform: scale3d(0.5,0.5,0.5);
+}
+#plant3D9{
+    transform: scale3d(2,2,2);
+}
+#plant3D10{
+    transform: scale3d(0.5,0.5,0.5);
 }
